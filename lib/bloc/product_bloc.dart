@@ -3,7 +3,6 @@ import 'dart:collection';
 import 'package:rxdart/rxdart.dart';
 import 'package:rxdart/subjects.dart';
 import 'package:simple_pos/models/catelog_item.dart';
-
 import 'package:simple_pos/repository/product_repository.dart';
 
 class ProductBloc {
@@ -45,7 +44,7 @@ class ProductBloc {
   }
 
   Future<Null> updateAllProducts() async {
-    _allProducts = await ProductRepository().fetchAllProducts();
+    _allProducts = await ProductRepository.getRepository().fetchAllProducts();
     return Future.value(null);
   }
 

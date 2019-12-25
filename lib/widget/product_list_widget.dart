@@ -1,5 +1,4 @@
-import 'dart:convert';
-import 'dart:typed_data';
+
 
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
@@ -89,6 +88,10 @@ class _ProductListWidgetState extends State<ProductListWidget> {
           ),
           Center(child: getItemImage(product)),
           Align(
+            alignment: Alignment.topRight,
+            child: Icon(Icons.add_shopping_cart),
+          ),
+          Align(
               alignment: Alignment.bottomCenter,
               child: Padding(
                 padding: const EdgeInsets.all(18.0),
@@ -140,7 +143,7 @@ class _ProductListWidgetState extends State<ProductListWidget> {
         height: 92,
         width: 92,
       );
-    Uint8List bytes = Base64Decoder().convert(product.image);
-    return Image.memory(bytes, height: 92, width: 92);
+
+    return Image.network(product.image, height: 92, width: 92);
   }
 }

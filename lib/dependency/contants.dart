@@ -1,6 +1,7 @@
-
 String baseUrl = "https://addon365crm.azurewebsites.net/api";
 bool isReleaseMode = true;
+bool isLocal = true;
+String dbName = "pos_db.db";
 
 void setMode(bool bIsReleaseMode) {
   isReleaseMode = bIsReleaseMode;

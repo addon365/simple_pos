@@ -1,6 +1,3 @@
-import 'dart:convert';
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:simple_pos/bloc/cart_bloc.dart';
 import 'package:simple_pos/dependency/utitlity_methods.dart';
@@ -19,8 +16,8 @@ class _CartWidgetState extends State<CartWidget> {
         height: 92,
         width: 92,
       );
-    Uint8List bytes = Base64Decoder().convert(product.image);
-    return Image.memory(bytes, height: 92, width: 92);
+
+    return Image.network(product.image, height: 92, width: 92);
   }
 
   Widget _buildCartItems() {

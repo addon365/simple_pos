@@ -6,7 +6,6 @@ import 'package:simple_pos/widget/product_list_widget.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Row(
@@ -30,9 +29,9 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Row(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Expanded(child: CartWidget()),
+          
           Expanded(child: ProductListWidget()),
         ],
       ),

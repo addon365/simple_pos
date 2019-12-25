@@ -1,8 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
 import 'package:simple_pos/pages/home_page.dart';
-
 import 'dependency/contants.dart';
 
 void main() {
