@@ -13,6 +13,7 @@ pubspec.lock
 doc/api/
 
 #Android gradle cache director
+android/.gradle/
 android/.gradle/4.10.2/fileHashes/fileHashes.bin
 android/.gradle/4.10.2/fileHashes/fileHashes.lock
 android/.gradle/4.10.2/fileHashes/resourceHashesCache.bin
